@@ -26,7 +26,7 @@ void Setup()
 }
 void Draw()
 {
-    system("cls");
+    system("cls");//clears the screen, actual function is declared in cstdlib
     for(int i=0; i<width+2; i++)
     {
         cout << "#";
@@ -74,9 +74,9 @@ void Draw()
 }
 void Input()
 {
-    if(_kbhit())
+    if(_kbhit())// if keyboard is hit then...
     {
-        switch(_getch())
+        switch(_getch())//if button pressed is one of these...
         {
             case 'a':
                 dir=LEFT;
